@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="/" class="nav-link">
+            <span class="animate_letters">[ky]</span>
+        </a>
+        <a href="#" class="nav-link">
+            <span class="animate_letters">[cv]</span>
+        </a>
+        <a href="#" class="nav-link">
+            <span class="animate_letters">[books]</span>
+        </a>
+        <a href="#" class="nav-link">
+            <span class="animate_letters">[posts]</span>
+        </a>
+        <a href="#" class="nav-link">
+            <span class="animate_letters">[lists]</span>
+        </a>
+    </nav>
+
+    <style>
+        @font-face {
+            font-family: 'Departure Mono';
+            src: url('./fonts/DepartureMono-Regular.otf') format('opentype');
+        }
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #010101;
+            color: #00FF00;
+            font-family: Departure Mono, monospace;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 0.8rem;
+            transition: 0.3s ease color, 0.3s ease background-color;
+        }
+
+        .navbar {
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: .55rem;
+        }
+
+        .nav-link {
+            color: #00FF00;
+        }
+
+        .nav-link:hover {
+            background-color: #fafafa;
+            color: #010101;
+        }
+    </style>
+
+    <script src="script.js"></script>
+</body>
+</html>
